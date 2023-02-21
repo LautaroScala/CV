@@ -21,9 +21,15 @@
     <!-- Estilos -->
     <link rel="stylesheet" href="css/styles.css" />
   </head>
+
   <body>
     <div class="homepage">
       <div class="row" mx-2 my-2>
+        <!-- 
+
+        Primer Bloque
+
+        -->
         <div class="col-sm-12 col-md-4 col-lg-4">
           <div class="card" style="width: 18rem">
             <img
@@ -34,12 +40,14 @@
             <h3>Nombre</h3>
             <hr />
             <div class="card-body">
-              <h6><i class="fa-solid fa-briefcase"></i>Web Developer</h6>
-              <h6><i class="fa-sharp fa-solid fa-location-dot"></i>Location</h6>
-              <h6><i class="fa-solid fa-envelope"></i>Email</h6>
-              <h6><i class="fa-solid fa-phone"></i>Telefono</h6>
+              <h6 id="Empleo"><i class="fa-solid fa-briefcase mx-2"></i>Web Developer</h6>
+              <h6>
+                <i class="fa-sharp fa-solid fa-location-dot mx-2"></i>Location
+              </h6>
+              <h6><i class="fa-solid fa-envelope mx-2"></i>Email</h6>
+              <h6><i class="fa-solid fa-phone mx-2"></i>Telefono</h6>
               <hr />
-              <h3><i class="fa-solid fa-asterisk"></i>Habilidades</h3>
+              <h3><i class="fa-solid fa-asterisk mx-2"></i>Habilidades</h3>
               <h6>Photoshop</h6>
               <h6>JavaScript</h6>
               <h6>HTML</h6>
@@ -47,8 +55,14 @@
             </div>
           </div>
         </div>
+    <!-- 
+
+        Segundo Bloque
+
+    -->
         <div class="col-sm-12 col-md-8 col-lg-8">
           <div class="accordion" id="accordionExample">
+            <!-- Experiencia laboral -->
             <div class="accordion-item">
               <h2 class="accordion-header" id="headingOne">
                 <button
@@ -59,7 +73,7 @@
                   aria-expanded="true"
                   aria-controls="collapseOne"
                 >
-                  Experiencia Laboral
+                  <i class="fa-solid fa-briefcase mx-2"></i>Experiencia Laboral
                 </button>
               </h2>
               <div
@@ -71,9 +85,28 @@
                 <div class="accordion-body">
                   <div class="card">
                     <div class="card-body">
-                      <h5 class="card-title">
-                        <i class="fa-solid fa-briefcase"></i>Desarrollo web
-                      </h5>
+                      <h5>Desarrollo web</h5>
+                      <h6>
+                        <i class="fa-regular fa-calendar mx-2"></i>2020 - 2022
+                      </h6>
+                      <p class="card-text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Vivamus id viverra mi. Duis at ullamcorper leo. Aliquam
+                        consectetur tristique risus, aliquet hendrerit velit
+                        consectetur eu. Sed sed congue elit, ac facilisis velit.
+                        Sed lorem augue, faucibus in felis sed, scelerisque.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-body">
+                  <div class="card">
+                    <div class="card-body">
+                      <h5>Diseño Gráfico</h5>
+                      <h6>
+                        <i class="fa-regular fa-calendar mx-2"></i>2019 - 2020
+                      </h6>
                       <p class="card-text">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                         Vivamus id viverra mi. Duis at ullamcorper leo. Aliquam
@@ -86,6 +119,7 @@
                 </div>
               </div>
             </div>
+            <!-- Educacion -->
             <div class="accordion-item">
               <h2 class="accordion-header" id="headingTwo">
                 <button
@@ -96,7 +130,7 @@
                   aria-expanded="false"
                   aria-controls="collapseTwo"
                 >
-                  <i class="fa-solid fa-graduation-cap"></i> Educación
+                  <i class="fa-solid fa-graduation-cap mx-2"></i> Educación
                 </button>
               </h2>
               <div
@@ -106,16 +140,25 @@
                 data-bs-parent="#accordionExample"
               >
                 <div class="accordion-body">
-                  <h6>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Vivamus id viverra mi. Duis at ullamcorper leo. Aliquam
-                    consectetur tristique risus, aliquet hendrerit velit
-                    consectetur eu. Sed sed congue elit, ac facilisis velit. Sed
-                    lorem augue, faucibus in felis sed, scelerisque.
-                  </h6>
+                  <div class="card">
+                    <div class="card-body">
+                      <h5>Desarrollador Fullstack</h5>
+                      <h6>
+                        <i class="fa-regular fa-calendar mx-2"></i>2022 - 2022
+                      </h6>
+                      <p class="card-text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Vivamus id viverra mi. Duis at ullamcorper leo. Aliquam
+                        consectetur tristique risus, aliquet hendrerit velit
+                        consectetur eu. Sed sed congue elit, ac facilisis velit.
+                        Sed lorem augue, faucibus in felis sed, scelerisque.
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
+            <!-- Idiomas -->
             <div class="accordion-item">
               <h2 class="accordion-header" id="headingThree">
                 <button
@@ -126,7 +169,7 @@
                   aria-expanded="false"
                   aria-controls="collapseThree"
                 >
-                  Accordion Item #3
+                  <i class="fa-solid fa-language mx-2"></i>Idiomas
                 </button>
               </h2>
               <div
@@ -136,18 +179,20 @@
                 data-bs-parent="#accordionExample"
               >
                 <div class="accordion-body">
-                  <strong>This is the third item's accordion body.</strong> It
-                  is hidden by default, until the collapse plugin adds the
-                  appropriate classes that we use to style each element. These
-                  classes control the overall appearance, as well as the showing
-                  and hiding via CSS transitions. You can modify any of this
-                  with custom CSS or overriding our default variables. It's also
-                  worth noting that just about any HTML can go within the
-                  <code>.accordion-body</code>, though the transition does limit
-                  overflow.
+                  <div class="card" style="width: 18rem">
+                    <div class="card-body">
+                      <h6>Español - Nativo</h6>
+                    </div>
+                  </div>
+                  <div class="card" style="width: 18rem">
+                    <div class="card-body">
+                      <h6>Ingles - Bilingüe</h6>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
+
           </div>
         </div>
       </div>
