@@ -23,29 +23,49 @@
   </head>
 
   <body>
-    <div class="homepage">
-      <div class="row" mx-2 my-2>
+    <div class="container">
+      <div class="row mx-2 my-2">
         <!-- 
 
         Primer Bloque
 
         -->
         <div class="col-sm-12 col-md-4 col-lg-4">
-          <div class="card" style="width: 18rem">
+          <div class="card">
             <img
-              src="https://randomuser.me/api/portraits/men/75.jpg"
+              id="foto"
               class="card-img-top"
               alt="Imagen no encontrada"
             />
-            <h3>Nombre</h3>
-            <hr />
             <div class="card-body">
-              <h6 id="Empleo"><i class="fa-solid fa-briefcase mx-2"></i>Web Developer</h6>
-              <h6>
-                <i class="fa-sharp fa-solid fa-location-dot mx-2"></i>Location
-              </h6>
-              <h6><i class="fa-solid fa-envelope mx-2"></i>Email</h6>
-              <h6><i class="fa-solid fa-phone mx-2"></i>Telefono</h6>
+                <h3 id="nombre"></h3>
+            <hr />
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col-2"><i class="fa-solid fa-briefcase mx-2"></i></th>
+                            <th scope="col-10">Web Developer</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row"><i class="fa-sharp fa-solid fa-location-dot mx-2"></i></i></th>
+                            <td id="lugar"></td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><i class="fa-solid fa-envelope mx-2"></i></th>
+                            <td id="email"></td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><i class="fa-solid fa-phone mx-2"></i></th>
+                            <td id="telefono"></td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><i class="fa-solid fa-mobile mx-2"></i></i></th>
+                            <td id="celular"></td>
+                        </tr>
+                    </tbody>
+                </table>
               <hr />
               <h3><i class="fa-solid fa-asterisk mx-2"></i>Habilidades</h3>
               <h6>Photoshop</h6>
@@ -202,5 +222,6 @@
       integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
       crossorigin="anonymous"
     ></script>
+    <script src="script/main.js"></script>
   </body>
 </html>
