@@ -1,0 +1,13 @@
+header {
+  background: #ed213a;
+  background: -webkit-linear-gradient(
+    to right,
+    #93291e,
+    #ed213a
+  );
+  background: linear-gradient(
+    to right,
+    #93291e,
+    #ed213a
+  );
+}
